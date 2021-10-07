@@ -34,6 +34,7 @@ if __name__ == "__main__":
 
     # It handles widget specific initialization, finalization.
     app = QtWidgets.QApplication([])
+
     widget = RandomWord()
 
     widget.resize(800, 800)
