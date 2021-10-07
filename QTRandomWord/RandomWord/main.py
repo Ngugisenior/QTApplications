@@ -10,14 +10,19 @@ class RandomWord(QtWidgets.QWidget):
 
         self.hello = ["Hallo Welt", "Hei maailma", "Hola Mundo", "Привет мир"]
 
+        # Innitializing a button
         self.button = QtWidgets.QPushButton("Click me!")
+        # Innitializing a Label
         self.text = QtWidgets.QLabel("Hello World",
                                      alignment=QtCore.Qt.AlignCenter)
 
+        # Create a box layout to hold the button and text
         self.layout = QtWidgets.QVBoxLayout(self)
+        # Add text to the box layout
         self.layout.addWidget(self.text)
+        # Add button to the box layout
         self.layout.addWidget(self.button)
-
+        # method to call on button click has been clicked
         self.button.clicked.connect(self.magic)
 
     @QtCore.Slot()
